@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+pymavlink
+# optional for later model work:
+# tensorflow   (WSL2 only)
+# onnx

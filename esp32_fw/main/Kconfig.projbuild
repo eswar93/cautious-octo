@@ -1,0 +1,26 @@
+menu "Remote node"
+    config RN_WIFI_SSID
+        string "Wi-Fi SSID"
+        default "my-router"
+    config RN_WIFI_PASS
+        string "Wi-Fi password"
+        default "changeme"
+    config RN_DEST_IP
+        string "Base station IP (Nucleo, or your PC while testing)"
+        default "192.168.1.50"
+    config RN_DEST_PORT
+        int "Base station UDP port"
+        default 14550
+    config RN_SENSOR_UART_NUM
+        int "Sensor UART number"
+        default 1
+    config RN_SENSOR_TX_PIN
+        int "Sensor UART TX GPIO"
+        default 17
+    config RN_SENSOR_RX_PIN
+        int "Sensor UART RX GPIO"
+        default 16
+    config RN_SENSOR_BAUD
+        int "Sensor UART baud"
+        default 115200
+endmenu
