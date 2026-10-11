@@ -9,13 +9,13 @@ ESP32-U remote node -> (Wi-Fi, MAVLink/UDP) -> NUCLEO-F767ZI base station -> dro
 ```
 
 ## What works right now (verified in the scaffold)
-- `core/` C library + tests: `make -C core test` passes, and the C model output matches Python's.
+- `core/` header-only C++20 library + tests: `make -C core test` passes, and the C++ model output matches Python's.
 - `ml/train.py`: trains a baseline on synthetic data (precision ~0.66, recall ~0.80 at threshold 0.7)
   and exports it to C.
 That is on synthetic data only; the numbers say the pipeline works, not how it will do on your sensor.
 
 ## What is written but not yet compiled or run
-ESP32 firmware, Nucleo glue, and PC tools could not be built in the environment this was generated in
+ESP32 firmware (C, ESP-IDF), Nucleo glue (`nucleo_fw/app`, C++; type-checked only against a stub of the MAVLink API), and PC tools could not be built in the environment this was generated in
 (no ESP-IDF, no ARM toolchain, no pymavlink, no hardware). Expect small compile fixes on first build.
 
 ## Quick start (Windows 11)

@@ -1,4 +1,4 @@
-"""Window features. MUST match core/tw.c exactly (same order, same definitions)."""
+"""Window features. MUST match core/window.hpp exactly (same order, same definitions)."""
 import numpy as np
 
 NFEAT = 5

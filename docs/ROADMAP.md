@@ -2,7 +2,7 @@
 
 Status key: [x] scaffolded and tested here, [~] scaffolded, untested on hardware, [ ] to do
 
-1. [x] Portable core (window, features, link monitor, predictor, debounce) + host tests + Python parity
+1. [x] Portable C++20 core (window, features, link monitor, predictor, debounce, pipeline) + host tests + Python parity
 2. [x] Synthetic data + baseline logistic model exported to C
 3. [~] ESP32 reads UART sensor, sends MAVLink/UDP — adapt `sensor_parse_line()` to your sensor
 4. [~] PC tools: `fake_remote.py`, `capture.py`; inspect traffic in Wireshark
